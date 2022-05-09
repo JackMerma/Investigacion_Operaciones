@@ -1,0 +1,27 @@
+l=18
+
+Objetivo
+Maximo volumen posible
+
+Variables de decision:
+X1:longitud del corte
+
+Funcion Objetivo:
+F=X1*(18-2X1)^2
+
+Ancho=X1
+Lado=(18-2X1)^2
+
+X1  18-2X1
+ --------
+|_|	 |_|
+|			|
+|			|
+|			|
+ --------
+
+Restricciones del problema:
+0<X1<9
+
+
+

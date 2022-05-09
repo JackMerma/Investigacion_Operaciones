@@ -1,0 +1,16 @@
+
+Objetivo
+Minimizar tiempo de procesamiento de contenedores
+
+Variables de decision:
+X[1,a]=coste de produccion para el enesimo contenedor
+X[2,b]=coste de produccion para el enesimo contenedor
+X[3,c]=coste de produccion para el enesimo contenedor
+X[4,d]=coste de produccion para el enesimo contenedor
+
+Funcion Objetivo:
+Min()=(X[1,a],X[2,b],X[3,c],X[4,d])
+
+Restricciones del problema:
+a!=b!=c!=d
+0<a,b,c,d<=5

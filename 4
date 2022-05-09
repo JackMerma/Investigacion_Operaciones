@@ -1,0 +1,31 @@
+
+s	24		1200
+p	6		3000
+a	9		1600
+
+t1	24s	
+t2	6p
+t3	6p+9a
+t4	24s+9a
+
+Objetivo:
+Minima cantidad de corbatas producidas
+
+Variables de decision:
+t1,t2,t3,t4
+
+Funcion Objetivo:
+F=19.24t1 + 8.7t2 + 9.52t3 + 10.64t4
+
+Restricciones del problema:
+- 5000<=19.24t1<=7000
+- 10000<=8.7t2<=14000
+- 13000<=9.52t3<=16000
+- 5000<=10.64t4<=8500
+materiales				yardas(costo)
+- 1 de t1=s				, 0.125t1>0	
+- 1 de t2=p				, 0.08t2>0
+- 1 de t3=0.5p+0.5a	, 0.1t3>0
+- 1 de t4=0.6s+0.4a	, 0.11t4>0
+
+

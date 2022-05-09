@@ -1,0 +1,29 @@
+			utilidad	espacio	venta(cantidad)
+Grande	140		20			900
+Mediana	120		15			1200
+Peque		100		12			750
+
+Plantas	unidades	espacio
+1			750		13000
+2			900		12000
+3			450		5000
+
+Objetivo
+Maximizar la utilidad (ganancias)
+
+Variables de decision:
+X1:Cantidad de bombas Grandes
+X2:Cantidad de bombas Medianas
+X3:Cantidad de bombas Pequeñas
+
+Funcion Objetivo:
+F=140*X1 + 120*X2 + 100*X3
+
+Restricciones del problema:
+- X1 <= 750
+- X2 <= 900
+- X3 <= 450
+
+- 20*X1 <= 13000
+- 15*X2 <= 12000
+- 12*X3 <= 5000
