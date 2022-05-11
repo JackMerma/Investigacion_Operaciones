@@ -5,12 +5,11 @@ Maximo volumen posible
 
 Variables de decision:
 X1:longitud del corte
+//Ancho=X1
+//Lado=(18-2X1)^2
 
 Funcion Objetivo:
 F=X1*(18-2X1)^2
-
-Ancho=X1
-Lado=(18-2X1)^2
 
 X1  18-2X1
  --------
@@ -22,6 +21,3 @@ X1  18-2X1
 
 Restricciones del problema:
 0<X1<9
-
-
-

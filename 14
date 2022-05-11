@@ -12,18 +12,28 @@ Objetivo
 Maximizar la utilidad (ganancias)
 
 Variables de decision:
-X1:Cantidad de bombas Grandes
-X2:Cantidad de bombas Medianas
-X3:Cantidad de bombas Pequeñas
+X1:Cantidad de bombas Grandes producidas en planta 1
+X2:Cantidad de bombas Medianas producidas en planta 1
+X3:Cantidad de bombas Pequeñas producidas en planta 1
+X4:Cantidad de bombas Grandes producidas en planta 2
+X5:Cantidad de bombas Medianas producidas en planta 2
+X6:Cantidad de bombas Pequeñas producidas en planta 2
+X7:Cantidad de bombas Grandes producidas en planta 3
+X8:Cantidad de bombas Medianas producidas en planta 3
+X9:Cantidad de bombas Pequeñas producidas en planta 3
 
 Funcion Objetivo:
-F=140*X1 + 120*X2 + 100*X3
+F=140*(X1+X4+X7) + 120*(X2+X5+X8) + 100*(X3+X6+X9)
 
 Restricciones del problema:
-- X1 <= 750
-- X2 <= 900
-- X3 <= 450
+- X1+X2+X3 <= 750
+- X4+X5+X6 <= 900
+- X7+X8+X9 <= 450
 
-- 20*X1 <= 13000
-- 15*X2 <= 12000
-- 12*X3 <= 5000
+- 20*(X1+X2+X3) <= 13000
+- 15*(X4+X5+X6) <= 12000
+- 12*(X7+X8+X9) <= 5000
+
+- X1+X4+X7>=900
+- X2+X5+X8>=1200
+- X3+X6+X9>=750

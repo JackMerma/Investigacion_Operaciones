@@ -9,17 +9,20 @@ Materia prima
 2:y	300
 
 Procesos
-	requiere		produce
-P	8x+4y			6B y 5C
-Q	5x+7y			4B y 8C	
+	requiere				produce
+P	8->x y 4->y			6B y 5C
+Q	5->x y 7->y			4B y 8C	
+
+Objetivo:
+Maxima cantidad de productos de A
 
 Variables de decision:
-X1: Cantidad de procesos de tipo P
-X2: Cantidad de procesos de tipo Q
+C1: Cantidad de procesos de tipo P
+C2: Cantidad de procesos de tipo Q
+M1: Materia de tipo 1
+M2: Materia de tipo 2
 
 Funcion Objetivo:
-F=X1(8x+4y)+X2(5x+7y)
 
 Restricciones del problema:
 x<=200, y<=300
-2B y 3C produce 1A
