@@ -1,0 +1,22 @@
+acero	3
+circu 3.82
+
+Objetivo
+Minimizar el costo del acero requerido
+
+Variables de decision:
+R:Radio del tambor
+H:Altura del tambor
+
+//P=2*Pi*R
+//Area1=P*H
+//Area2=2*Pi*R*R
+//F=3*Area1 + 3.82*Area2
+
+
+Funcion Objetivo:
+F(R,H)=3*((2*Pi*R)*H) + 3.82*(2*Pi*R*R)
+
+Restricciones del problema:
+Pi*R*R*H >= 10u3
+H>0, R>0

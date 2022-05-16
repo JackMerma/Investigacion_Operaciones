@@ -1,0 +1,43 @@
+japon,corea,taiwan,mexico
+Alto calibre
+Bajo calibre
+Plantas:1,2
+Compañias suministradoras:K,M
+
+Acero Alto 	1A+2B		
+Acero Bajo  1A+3B
+
+Objetivo
+Minimizar el costo total anual
+
+Variables de decision:
+Y1: Cantidad de Hierro de Alto Calibre producido
+Y2: Cantidad de Hierro de Bajo Calibre producido
+Z1: Costo total de Compra y embarque de hierro de Alto Calibre
+Z2: Costo total de Compra y embarque de hierro de Bajo Calibre
+
+X1: Cantidad de Acero de Alto calibre producido
+X2: Cantidad de Acero de Bajo calibre producido
+P1: Costo total de produccion de acero de Alto Calibre
+P2: Costo total de produccion de acero de Bajo Calibre
+
+C1: Costo total de embarque de acero de Alto Calibre
+C2: Costo total de embarque de acero de Bajo Calibre
+
+
+Funcion Objetivo:
+X1=Y1+2Y2
+X2=Y1+3Y2
+
+Compra=Y1*Z1 + Y2*Z2
+Produccion=X1*P1+X2*P2  =  P1(Y1+2Y2) + P2(Y1+3Y2)
+Distribucion=C1*X1+C2*X2  =  C1*(Y1+2Y2) + C2*(Y1+3Y2)
+
+F=Y1*Z1 + Y2*Z2 + P1(Y1+2Y2) + P2(Y1+3Y2) + C1*(Y1+2Y2) + C2*(Y1+3Y2)
+F=Y1*Z1 + Y2*Z2 + (P1+C1)(Y1+2Y2) + (P2+C2)(Y1+3Y2)
+
+Restricciones del problema:
+- Y1 <= 1000 (mina K)
+- Y2 <= 2000 (mina M)
+- X1 + X2 <= 1500 (ciudad 1)
+- X1 + X2 <= 700  (ciudad 2)

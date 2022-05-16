@@ -1,0 +1,23 @@
+Objetivo
+Minimizar el numero de dias de operacion de las minas
+
+Variables de decision:
+DM1: Dias de operacion de la mina 1 
+DM2: Dias de operacion de la mina 2 
+DM3: Dias de operacion de la mina 3 
+
+M1GA: Toneladas de grado alto, sacada de la mina 1
+M1GB: Toneladas de grado bajo, sacada de la mina 1
+M2GA: Toneladas de grado alto, sacada de la mina 2
+M2GB: Toneladas de grado bajo, sacada de la mina 2
+M3GA: Toneladas de grado alto, sacada de la mina 3
+M3GB: Toneladas de grado bajo, sacada de la mina 3
+
+Funcion Objetivo:
+Total(coste) = DM1*20 + DM2*22 + DM3*18
+Total(toneladas)  = DM1*(M1GA + M1GB) + DM2*(M2GA + M2GB) + DM3*(M3GA + M3GB)
+
+Restricciones del problema:
+M1GA + M2GA + M3GA = 54
+M1GB + M2GB + M3GB = 65
+DM1,DM2,DM3>0

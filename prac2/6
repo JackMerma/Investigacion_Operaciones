@@ -1,0 +1,31 @@
+Tipo	precio	tiempo	unidades
+A		700		1			-
+B		3500		2			1->2A
+C		7000		3			1->1B
+
+Objetivo
+Maximizar los ingresos y minimizar los gatos por publicidad
+
+Variables de decision:
+AV: cantidad de A para vender
+AB: cantidad de A para producir B
+BV: cantidad de B para vender
+BC: cantidad de B para producir C
+CV: cantidad de C para vender
+
+PT: Cantidad de unidades de publicidad en television
+PR: Cantidad de unidades de publicidad en radio
+PP: Cantidad de unidades de publicidad en prensa
+
+Funcion Objetivo:
+T = 700*AV + 3500*BV + 7000*CV - (2000*PT + 300*PR + 600*PP)
+
+Restricciones del problema:
+BV+BC=AB/2
+CV=BC
+(AV+AB) + 2*(BV+BC) + 3CV <=40
+AV+AB>1
+
+PR<PT+PP
+9PT>PP+PR
+PT*2000+PR*300+PP*600<=18500

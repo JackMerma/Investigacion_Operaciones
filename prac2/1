@@ -1,0 +1,22 @@
+
+Tipos de carnes	carne		grasa		costo(libra)
+Res					80%		20%		80
+Cerdo					68%		32%		60
+
+
+Objetivo
+Minimizar el costo para preparar albondigon
+
+Variables de decision:
+RC: Libras de Res que son carne
+RG: LIbras de Res que son grasa
+CC: Libras de Cerdo que son carne
+CG: LIbras de Cerdo que son grasa
+
+Funcion Objetivo:
+T=80(RC+RG)+60(CC+CG)
+
+Restricciones del problema:
+1RC=4RG
+8CC=17CG
+RG+CG <= (RC+CC)/3

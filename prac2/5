@@ -1,0 +1,23 @@
+Tipo	precio	tiempo	unidades
+A		700		1			-
+B		3500		2			1->2A
+C		7000		3			1->1B
+
+Objetivo
+Maximizar los ingresos
+
+Variables de decision:
+AV: cantidad de A para vender
+AB: cantidad de A para producir B
+BV: cantidad de B para vender
+BC: cantidad de B para producir C
+CV: cantidad de C para vender
+
+Funcion Objetivo:
+T = 700*AV + 3500*BV + 7000*CV
+
+Restricciones del problema:
+BV+BC=AB/2
+CV=BC
+(AV+AB) + 2*(BV+BC) + 3CV <=40
+AV+AB>1

@@ -1,0 +1,19 @@
+Papel		ancho 	longitud cantidad
+A   		6	   	l			a
+B	 		9		   l			b
+
+Objetivo
+Minimizar cantidad de papel perdido
+
+Variables de decision:
+X1: Cantidad de papel A
+X2: Cantidad de papel B
+
+Funcion Objetivo:
+F=6X1 + 9X2
+
+Restricciones del problema:
+L=Largo de papel dado
+A_req=Area requerida
+- X1,X2>=0
+- L*(6X1+9X2)>=A_req

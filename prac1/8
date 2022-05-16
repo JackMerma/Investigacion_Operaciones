@@ -1,0 +1,40 @@
+A1		1000	
+A2		1500
+A3		2000
+Base	4000
+
+		A1		A2		A3	 Base
+Rojo  3		1		2   6
+Azul	2		3		4	 9
+Verde	1		2		3	 6
+
+Objetivo
+Maximizar los ingresos de venta
+
+Variables de decision:
+k:	 Precio por galon
+
+TR:Tinta roja
+TA:Tinta azul
+TV:Tinta verde
+BR:Base roja
+BA:Base azul
+BV:Base verde
+X1:Aditivo A1 Rojo
+X2:Aditivo A1 Verde
+X3:Aditivo A1 Azul
+X4:Aditivo A2 Rojo
+X5:Aditivo A2 Verde
+X6:Aditivo A2 Azul
+X7:Aditivo A3 Rojo
+X8:Aditivo A3 Verde
+X9:Aditivo A3 Azul
+
+Funcion Objetivo:
+F=MAX(TR+TV+TA)
+
+Restricciones del problema:
+TR<=333
+TA<=444
+TV<=450
+

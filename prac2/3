@@ -1,0 +1,23 @@
+Tipos		Precio
+Regular	12
+Extra		14
+
+Objetivo
+maximizar ganancias
+
+Variables de decision:
+NR: cantidad de barriles regular-nacional
+NE: cantidad de barriles extra-nacional
+IR: cantidad de barriles regular-importado
+IE: cantidad de barriles extra-importado
+
+Funcion Objetivo:
+T = 12*(NR+IR) + 14*(NE+IE) - 8*(NR+NE) - 15*(IR+IE)
+T = 12NR + 12IR + 14NE + 14IE - 8NR - 8NE - 15IR - 15IE
+T = 4NR - 3IR + 6NE -1IE
+
+Restricciones del problema:
+50000<=NR+IR<=100000
+5000 <=NE+IE<=20000
+NR+NE<=40000
+IR+IE<=60000

@@ -1,0 +1,13 @@
+Objetivo
+Maxima cantidad de frecuencias aprobadas(no hay interferencia)
+
+Variables de decision:
+Frecuencias radiales
+x1,x2,x3,x4,x5,x6,x7,x8
+
+Funcion Objetivo:
+Max(n)=(x'1,x'2,x'3,...,x'n)[x'1,x'1+0.5]
+
+Restricciones del problema:
+x'1<x'2<x'3<...<x'n
+x'n<x'1+0.5

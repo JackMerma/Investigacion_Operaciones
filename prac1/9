@@ -1,0 +1,17 @@
+a	15
+b	10
+
+Objetivo
+Minimizar coste del marco
+
+Variables de decision:
+X1:a->largo
+X2:b->ancho
+
+Funcion Objetivo:
+F=15X1+10X2
+F=
+
+Restricciones del problema:
+X1*X2=1
+X1=1/X2

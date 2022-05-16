@@ -1,0 +1,46 @@
+Objetivo
+Minimizar tiempo de procesamiento de contenedores
+
+Variables de decision:
+Booleanos
+X1: Maquina 1, contenedor 3X4
+X2: Maquina 1, contenedor 4X6
+X3: Maquina 1, contenedor 6x8
+X4: Maquina 1, contenedor 8X12
+X5: Maquina 1, contenedor 12X18
+X6: Maquina 2, contenedor 3X4
+X7: Maquina 2, contenedor 4X6
+X8: Maquina 2, contenedor 6x8
+X9: Maquina 2, contenedor 8X12
+X10: Maquina 2, contenedor 12X18
+X11: Maquina 3, contenedor 3X4
+X12: Maquina 3, contenedor 4X6
+X13: Maquina 3, contenedor 6x8
+X14: Maquina 3, contenedor 8X12
+X15: Maquina 3, contenedor 12X18
+X16: Maquina 4, contenedor 3X4
+X17: Maquina 4, contenedor 4X6
+X18: Maquina 4, contenedor 6x8
+X19: Maquina 4, contenedor 8X12
+X20: Maquina 4, contenedor 12X18
+
+
+Funcion Objetivo:
+F=MIN(
+25*X1 + 24*X2 + 30X3 + 38X4 + 40X5 +
+20*X6 + 22*X7 + 30X8 + 32X9 + 40X10 +
+28*X11 + 25*X12 + 28X13 + 30X14 + 28X15 +
+30*X16 + 23*X17 + 25X18 + 30X19 + 30X20 +
+)
+
+Restricciones del problema:
+X1+X2+X3+X4+X5=1
+X6+X7+X8+X9+X10=1
+X11+X12+X13+X14+X15=1
+X16+X17+X18+X19+X20=1
+
+X1+X6+X11+X16=1
+X2+X7+X12+X17=1
+X3+X8+X13+X18=1
+X4+X9+X14+X19=1
+X5+X10+X15+X20=1

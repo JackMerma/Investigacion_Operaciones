@@ -1,0 +1,18 @@
+R=regulares		A		800		10%		0	
+N=nuevo			B		500					1 mes
+
+Objetivo
+Reducir costos de contratacion
+
+Variables de decision:
+X1:Cantidad de personas nuevas contratadas
+X2:Cantidad de personas regulares contratadas
+
+Funcion Objetivo:
+F = 500*X1 + 800*X2
+
+Restricciones del problema:
+P1:Produccion de trabajador nuevo
+P2:Produccion de trabajador regular
+- P1+P2=1.2P2
+- X2''=0.9(X2') => X2'' del siguiente mes, X' del mes pasado
